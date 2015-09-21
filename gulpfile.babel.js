@@ -37,8 +37,15 @@ const testLintOptions = {
     mocha: true
   }
 };
+const mainLintOptions = {
+  globals: {
+    'jQuery':false,
+    '$':true,
+    'noUiSlider': true
+  }
+};
 
-gulp.task('lint', lint('app/scripts/**/*.js'));
+gulp.task('lint', lint('app/scripts/**/*.js', mainLintOptions));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles'], () => {

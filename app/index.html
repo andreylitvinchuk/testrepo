@@ -35,9 +35,11 @@
         <h3 class="text-muted">UIKit</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Style Guide</h1>
-        <p class="lead">Kamenka project</p>
+      <div class="jumbotron jumbotron-back">
+        <div>
+          <h1>Style Guide</h1>
+          <p class="lead">Kamenka project</p>          
+        </div>
       </div>
 
       <div class="row">
@@ -105,14 +107,92 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sed vero illum saepe iure magnam fuga et at, sequi officiis esse! Ducimus accusantium, aliquam ipsam, sequi suscipit vel animi ipsum!</p>
                 </li>
                 <li>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sed vero illum saepe iure magnam fuga et at, sequi officiis esse! Ducimus accusantium, aliquam ipsam, sequi suscipit vel animi ipsum!</p>
+                  <p>Ducimus accusantium, aliquam ipsam, sequi suscipit vel animi ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sed vero illum saepe iure magnam fuga et at, sequi officiis esse! </p>
                 </li>
                 <li>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sed vero illum saepe iure magnam fuga et at, sequi officiis esse! Ducimus accusantium, aliquam ipsam, sequi suscipit vel animi ipsum!</p>
+                  <p>Ipsam sed vero illum saepe iure magnam fuga et at, sequi officiis esse Lorem ipsum dolor sit amet, consectetur adipisicing elit. ! Ducimus accusantium, aliquam ipsam, sequi suscipit vel animi ipsum!</p>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>SelectBox</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="example" id="" class="selectStyle">
+              <option value="0">Пункт 1</option>
+              <option value="1">Пункт 2</option>
+              <option value="2">Пункт 3</option>
+              <option value="3">Пункт 4</option>
+            </select>            
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>Input</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <form action="">
+              <input type="text" placeholder="Placeholder ..." class="input">
+            </form>          
+          </div>          
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>CheckBox</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <form action="">
+              <input name="example-name1" id="ex1" type="checkbox" value="example1" class="checkbox">
+              <label for="ex1" class="label-checkbox">Label for example 1</label>
+              <input name="example-name2" id="ex2" type="checkbox" value="example2">
+              <label for="ex2" class="label-checkbox">Label for example 2</label>
+              <input name="example-name3" id="ex3" type="checkbox" value="example3">
+              <label for="ex3" class="label-checkbox">Label for example 3</label>
+              <input name="example-name4" id="ex4" type="checkbox" value="example4">
+              <label for="ex4" class="label-checkbox">Label for example 4</label>
+            </form>          
+          </div>
+          <div class="col-sm-6">
+            <form action="">
+              <input name="example-name5" id="ex5" type="checkbox" value="example5" class="checkbox">
+              <label for="ex5" class="label-checkbox">Label for example 5</label>
+              <input name="example-name6" id="ex6" type="checkbox" value="example6">
+              <label for="ex6" class="label-checkbox">Label for example 6</label>
+              <input name="example-name7" id="ex7" type="checkbox" value="example7">
+              <label for="ex7" class="label-checkbox">Label for example 7</label>
+              <input name="example-name8" id="ex8" type="checkbox" value="example8">
+              <label for="ex8" class="label-checkbox">Label for example 8</label>
+            </form>          
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>UI Slider</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="uislider">
+              <div class="uislider__value-block clearfix">
+                <div class="left">
+                  <input id="input-min" type="text" class="input">
+                </div>
+                <div class="center">
+                  <p>-</p>
+                </div>
+                <div class="right">
+                  <input id="input-max" type="text" class="input">
+                </div>
+              </div>
+              <div id="uislider">              
+              </div>
+            </div>
+          </div>          
         </div>
       </div>
 
@@ -137,6 +217,8 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="/bower_components/nouislider/distribute/nouislider.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
