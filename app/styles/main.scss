@@ -6,6 +6,7 @@ $font-family-main: 'Open Sans', sans-serif;
 // endbower
 @import "selectize.scss";
 @import "nouislider.scss";
+@import "owl.scss";
 
 
 .browserupgrade {
@@ -150,6 +151,7 @@ $main-light-2: #fc9c3d;
   
   height: 45px;
   line-height: 45px;
+  margin: 5px 0;
 
   border-radius: 6px;
   border-bottom: 1px solid #bdbdbd;
@@ -167,6 +169,16 @@ $main-light-2: #fc9c3d;
     text-decoration: none;
     color: $text + 20%;
     background: $main-light + 20%;
+  }
+  &--orange {
+    background: $main-light-2;
+    border-bottom: 2px solid $main-light-2 - 20%;
+    color: #fff;
+      &:hover {
+        color: #fff;
+        border-bottom:2px solid $main-light-2;
+        background: $main-light-2  + 15%;
+      }
   }
 }
 
@@ -368,4 +380,134 @@ label:hover:before {
     float: right;
   }
 }
+.ui-slider-description {
+  padding: 10px 0;
+  .min {
+    float: left;
+    font: {
+      size: 11px;
+    }
+  }
+  .max {
+    float: right;
+    font: {
+      size: 11px;
+    }
+  }
+}
 // ================= UI Slider END ================== //
+
+
+// ================= Card item  ================== //
+.card-item {
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  &:hover {
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(255,210,76,1);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(255,210,76,1);
+    box-shadow: 0px 0px 0px 3px rgba(255,210,76,1);
+  }
+}
+.card-item__img {
+  height: 190px;
+}
+.card-item-desc__title {
+  font: {
+    size: 18px;
+    weight: 500;
+  }
+  color: #393939;
+}
+.card-item-desc {
+  padding: 10px;
+}
+.card-item-desc__metro {
+  position: relative;
+  padding: 0 0 0 22px;
+  &--blue {
+    color: #4782a7;
+    &:before {
+      background: #4782a7;
+    }
+  }
+  &--red {
+    color: #ec5633;
+    &:before {
+      background: #ec5633;
+    }
+  }
+  &:before {
+    content: 'м';
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 14px;
+    text-align: center;
+    font: {
+      size: 11px;
+    }
+  }
+}
+.card-item-desc__adress {
+  font: {
+    size: 13px;
+  }
+  color: #2c2c2c;
+}
+.card-item-desc__table {
+  width: 100%;
+  tr td {
+    width: 50%;
+    padding: 5px 10px;
+    font: {
+      size: 13px;
+    }
+    color: #2c2c2c;
+  }
+  tr {
+    &:nth-child(2n+1) {
+      background: #e7eaec;
+    }
+  }
+}
+.card-item-desc__price {
+  background: #ffd34c;
+  margin-top: 10px;
+  padding: 10px 10px 1px 10px;
+  font: {
+    size: 13px;
+  }
+  color: #2c2c2c;
+}
+// ================= Card item END ================== //
+
+
+
+
+// ================= CaSlider    ================== //
+.slider-item__img {
+  height: 120px;
+  box-sizing: border-box;
+  border: 2px solid #e9ebec;
+}
+.slider-item__title {
+  font: {
+    size: 18px;
+  }
+  padding: 15px 0;
+  margin: 0;
+}
+.slider-item__text {
+  font: {
+    size: 14px;
+  }
+  text-align: justify;
+}
+// ================= Slider END ================== //
