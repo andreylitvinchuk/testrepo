@@ -1,5 +1,5 @@
 $icon-font-path: '../fonts/';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,600&subset=latin,cyrillic);
 $font-family-main: 'Open Sans', sans-serif;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -7,6 +7,7 @@ $font-family-main: 'Open Sans', sans-serif;
 @import "selectize.scss";
 @import "nouislider.scss";
 @import "owl.scss";
+@import "jquery.fancybox.scss";
 
 
 .browserupgrade {
@@ -107,6 +108,19 @@ body {
   padding: 20px;
 }
 
+.card-shadow {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+p {
+  margin: 10px 0;
+}
+
 
 // ===================== Colors ====================== //
 $text: #343434;
@@ -152,6 +166,7 @@ $main-light-2: #fc9c3d;
   height: 45px;
   line-height: 45px;
   margin: 5px 0;
+  cursor: pointer;
 
   border-radius: 6px;
   border-bottom: 1px solid #bdbdbd;
@@ -190,6 +205,7 @@ $main-light-2: #fc9c3d;
   position: relative;
   padding: 0 25px 0 0;
   margin: 5px;
+  cursor: pointer;
   &:hover {
     color: $main-light-2 + 20%;
     &:after {
@@ -401,9 +417,6 @@ label:hover:before {
 // ================= Card item  ================== //
 .card-item {
   margin-bottom: 40px;
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
   &:hover {
     -webkit-box-shadow: 0px 0px 0px 3px rgba(255,210,76,1);
     -moz-box-shadow: 0px 0px 0px 3px rgba(255,210,76,1);
@@ -500,6 +513,7 @@ label:hover:before {
 .slider-item__title {
   font: {
     size: 18px;
+    weight: 600;
   }
   padding: 15px 0;
   margin: 0;
@@ -511,3 +525,106 @@ label:hover:before {
   text-align: justify;
 }
 // ================= Slider END ================== //
+
+
+
+// ================= small-card  ================== //
+.small-card {
+  background: #fff;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+.small-card__img {
+  height: 150px;
+  position: relative;
+}
+
+.small-card__date {
+  display: block;
+  position: absolute;
+  background: $main-light;
+  padding: 3px 8px;
+  border-radius: 5px;
+  top: 14px;
+  right: 14px;
+}
+
+.small-card__title {
+  font: {
+    size: 18px;
+    weight: 600;
+  }
+  text-align: center;
+  padding: 14px 0 8px 0;
+  margin: 0;
+}
+
+.small-card__desc {
+  font: {
+    size: 13px;
+    weight: normal;
+  }
+  text-align: center;
+  margin: 0;
+}
+// ================= small-card END ================== //
+
+
+
+
+// ================= news-block END ================== //
+.news-block {
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.news-block__img {
+  height: 120px;
+  width: 120px;
+  float: left;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;  
+  }
+}
+.news-block__title a {
+  color: $main-light-2;
+  text-decoration: underline;
+  margin: 0 0 0 15px;
+  line-height: 15px;
+  font: {
+    size: 15px;
+  }
+  &:hover {
+    color: $main-light-2 + 20%;
+  }
+}
+.news-block__date {
+  color: #9e9e9e;
+  margin: 6px 0 6px 135px;
+  font: {
+    size: 11px;
+  }
+}
+.news-block__desc {
+  margin: 0px 0 0px 135px;
+  font: {
+    size: 13px;
+  }
+}
+
+
+
+
+// ================= news-block END ================== //
+
+
+// ================= popup  ================== //
+.popup {
+  // display: none;
+  width: 90%;
+  max-width: 480px;
+  
+}
+// ================= popup END ================== //

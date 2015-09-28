@@ -51,32 +51,35 @@ jQuery(document).ready(function($) {
   });
   // Owl carousel
   $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:15,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        480:{
-            items:2,
-            nav:false
-        },
-        680:{
-            items:3,
-            nav:false
-        },
-        880:{
-            items:4,
-            nav:true,
-            loop:false
-        },
-        1280:{
-            items:5,
-            nav:true,
-            loop:false
-        }
+    loop: true,
+    margin: 15,
+    responsiveClass: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      480: {
+        items: 2,
+        nav: false
+      },
+      680: {
+        items: 3,
+        nav: false
+      },
+      880: {
+        items: 4,
+        nav: true,
+        loop: false
+      },
+      1280: {
+        items: 5,
+        nav: true,
+        loop: false
+      }
     }
   });
+  //poopp window
+  $('.popup-call').fancybox();
 });
